@@ -1,0 +1,12 @@
+{
+  "name": "jump-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix CampusConnect/backend\" \"npm run dev --prefix CampusConnect/frontend\"",
+    "install:all": "npm install && npm install --prefix CampusConnect/backend && npm install --prefix CampusConnect/frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
